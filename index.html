@@ -5,9 +5,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Los Villeros - LVS</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <bgsound src="alien-legal.mp3" loop="infinite">
         <meta name="description" content="LOS VILLEROS">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="icon" href="https://images-ext-2.discordapp.net/external/1hnkt4eg4d1zA4MyJ-lPlFSDIQ9JZltoK6Iph-uwkZI/https/cdn.discordapp.com/icons/861705558369501214/d89a00cee8891984de6c26a680d3e775.png?width=80&height=80">
         <link rel="stylesheet" type="text/css" href="font.css">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,6 +18,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
+
+<div class="wrapper">
+    <a class="button" href="inicio.html">Entrar</a>
+</div>
+
+
+<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+    </defs>
+</svg>
+
+
+
+
         <div class="social-bar">
 
 
@@ -39,7 +57,7 @@
       <video src="alien-legal.mp4" autoplay="true" muted="false" loop="true" poster="https://images-ext-2.discordapp.net/external/lr-_vuiZ-wHJ7PGEx7ymovfV4j7CuSmZJRHdU1TG7H4/%3Fsize%3D1024/https/cdn.discordapp.com/icons/805275191667720232/a_2745ab40c97c9069e0121184fdc13538.gif"></video>
         <img src="https://images-ext-2.discordapp.net/external/lr-_vuiZ-wHJ7PGEx7ymovfV4j7CuSmZJRHdU1TG7H4/%3Fsize%3D1024/https/cdn.discordapp.com/icons/805275191667720232/a_2745ab40c97c9069e0121184fdc13538.gif" class=" mx-auto img-fluid w-50 logo1 animated infinite pulse delay-1.5s">
         <center>
-        <h1><a href="inicio.html"><font color="red">~~ > 𝐈 𝐧 𝐢 𝐜 𝐢 𝐨 < ~~</font></h1>
+        
         </center>
      <br>
 <br>
@@ -125,7 +143,68 @@ footer.sponsor {
     left: 50px;
     top: 840px;
 }
-            
+    :root {
+    --bg: #ff0000;
+    --color: #1a1919;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    padding: 1.5rem 0;
+    filter: url('#goo');
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: absolute;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    top: 615px;
+    left: 285px;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+
+
+
+     
         </style>
 
     </body>
