@@ -8,6 +8,12 @@
 
 body {
 	font-family: cursive;
+	height: 900px;
+  	background-image: url("https://2.bp.blogspot.com/-KVR9o7mclUE/WKh5kz21P-I/AAAAAAAABAQ/YaPC37qfIbMujQcAK8dfmqg_UJaJ41mdgCLcB/s1600/csgo%2Bgif%2B9.gif");
+	background-size: cover;
+   	background-repeat:no-repeat;
+    	background-position: center center;
+}
 }
 nav {
 	background: #0f0f0f;
