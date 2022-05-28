@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Integrantes</title>
+</head>
+<body background="https://fondosmil.com/fondo/29366.jpg">
+         <nav>    
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="https://images-ext-2.discordapp.net/external/lr-_vuiZ-wHJ7PGEx7ymovfV4j7CuSmZJRHdU1TG7H4/%3Fsize%3D1024/https/cdn.discordapp.com/icons/805275191667720232/a_2745ab40c97c9069e0121184fdc13538.gif?width=399&height=399" width="70" height="60"></label>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="Discord.html">Discord</a></li>
+            <li><a href="Integrantes.html">Integrantes</a></li>
+            <li><a href="Sponsors.html">Sponsors</a></li>
+        </ul>
+    </nav>
+    <br>
+     <script>
+            
+            var text = "<h1>" 
+            var speed = 80 
+
+
+            if (document.all || document.getElementById) {
+                document.write('<span id="highlight">' + text + '</span>')
+                var storetext = document.getElementById ? document.getElementById("highlight") : document.all.highlight
+            } else
+                document.write(text)
+            var hex = new Array("00", "14", "28", "3C", "50", "64", "78", "8C", "A0", "B4", "C8", "DC", "F0")
+            var r = 1
+            var g = 1
+            var b = 1
+            var seq = 1
+
+            function changetext() {
+                rainbow = "#" + hex[r] + hex[g] + hex[b]
+                storetext.style.color = rainbow
+            }
+
+            function change() {
+                if (seq == 6) {
+                    b--
+                    if (b == 0)
+                        seq = 1
+                }
+                if (seq == 5) {
+                    r++
+                    if (r == 12)
+                        seq = 6
+                }
+                if (seq == 4) {
+                    g--
+                    if (g == 0)
+                        seq = 5
+                }
+                if (seq == 3) {
+                    b++
+                    if (b == 12)
+                        seq = 4
+                }
+                if (seq == 2) {
+                    r--
+                    if (r == 0)
+                        seq = 3
+                }
+                if (seq == 1) {
+                    g++
+                    if (g == 12)
+                        seq = 2
+                }
+                changetext()
+            }
+
+            function starteffect() {
+                if (document.all || document.getElementById)
+                    flash = setInterval("change()", speed)
+            }
+            starteffect();
+            </script>
+            <center>
+                <h1>Integrantes</h1>
+                <br>
+                <br>
+                <br>
+            </center>
+    <img class="agn" src="https://images-ext-1.discordapp.net/external/r7QSi0QpM6YoXXl1Vi4hNMu1xaqY-z1XwFSR8P_yjcg/https/avatars.akamai.steamstatic.com/b9a1074513dd3352674f945ff6e1338fc34d13df_full.jpg" width="100" height="100"><h4 class="d">Agn</h4>
+    <br>
+    <br>
+  
+    
+    
+    <a href="https://steamcommunity.com/id/homeindexx/"><img class="skull" src="https://media.discordapp.net/attachments/806343402312564761/979983879219859477/12e2f682f2ffa7a0a498ffef136ba41c.png" width="100" height="100"><h4 class="s">$kull</h4></a>
+    <a href="https://steamcommunity.com/profiles/76561199087876605"><img src="https://media.discordapp.net/attachments/806343402312564761/979983850140745758/38ad62bae023d31f65144a46836a5135.png" class="kbza"><p class="k">Kbza</p></a>
+
+
+
+
+    <a href="https://steamcommunity.com/profiles/76561198188505717"><img class="michelin" src="https://media.discordapp.net/attachments/806343402312564761/979984324982108181/f295a1776179cb7e816105c31c324444.png"><p class="m">Michelin</p></a>
+
+
+
+    <a href="https://steamcommunity.com/id/p3ch1994"><img src="https://media.discordapp.net/attachments/806343402312564761/979984185097871370/d9abe116277fff96d994dd1aed2fe6d5.png" class="pablito"><p class="pa">Pablito</p></a>
+
+
+    <a href="https://steamcommunity.com/profiles/76561198885682213"><img src="https://media.discordapp.net/attachments/806343402312564761/979984254211604480/c6c7a4b9e1e1ed144cf3cc3563994924.png" class="sinpunteria"><p class="mi">Mr.SinPunteria</p></a>
+
+
+    <img src="https://images-ext-2.discordapp.net/external/lr-_vuiZ-wHJ7PGEx7ymovfV4j7CuSmZJRHdU1TG7H4/%3Fsize%3D1024/https/cdn.discordapp.com/icons/805275191667720232/a_2745ab40c97c9069e0121184fdc13538.gif?width=399&height=399" class="lvs"><p class="ls">Los Villeros</p>
+
+
+   <br>
+
+
+
+<footer class="sponsor"><a href="https://katech.com.ar/" target="_blank"><img src="katech-logo-footer.png" width="150" height="60">
+</footer> 
+<style>
+    
+    img.agn {
+        position: absolute;
+width: 100px;
+height: 100px;
+left: 860px;
+top: 230px;
+ border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+    }
+    h4.d {
+              position: absolute;
+width: 100px;
+height: 100px;
+left: 895px;
+top: 330px;  
+    }
+    img.skull{
+          position: absolute;
+width: 100px;
+height: 100px;
+left: 870px;
+top: 400px;
+border-top-left-radius: 50% 50%;
+border-top-right-radius: 50% 50%;
+border-bottom-right-radius: 50% 50%;
+border-bottom-left-radius: 50% 50%;
+    }
+    h4.s{
+         position: absolute;
+width: 100px;
+height: 100px;
+left: 900px;
+top: 500px; 
+    }
+    img.kbza {
+         position: absolute;
+width: 100px;
+height: 100px;
+left: 870px;
+top: 600px;
+border-top-left-radius: 50% 50%;
+border-top-right-radius: 50% 50%;
+border-bottom-right-radius: 50% 50%;
+border-bottom-left-radius: 50% 50%;
+    }
+      img.michelin {
+         position: absolute;
+width: 100px;
+height: 100px;
+left: 990px;
+top: 600px;
+border-top-left-radius: 50% 50%;
+border-top-right-radius: 50% 50%;
+border-bottom-right-radius: 50% 50%;
+border-bottom-left-radius: 50% 50%;
+    }
+    p.k {
+         position: absolute;
+width: 100px;
+height: 100px;
+left: 900px;
+top: 700px; 
+    }
+       p.m {
+         position: absolute;
+width: 100px;
+height: 100px;
+left: 1010px;
+top: 700px; 
+    }
+img.pablito {
+         position: absolute;
+width: 100px;
+height: 100px;
+left: 1110px;
+top: 600px;
+border-top-left-radius: 50% 50%;
+border-top-right-radius: 50% 50%;
+border-bottom-right-radius: 50% 50%;
+border-bottom-left-radius: 50% 50%;
+    }
+    p.pa {
+        position: absolute;
+        width: 100px;
+height: 100px;
+left: 1135px;
+top: 700px; 
+    }
+    img.sinpunteria {
+ position: absolute;
+width: 100px;
+height: 100px;
+left: 745px;
+top: 600px;
+border-top-left-radius: 50% 50%;
+border-top-right-radius: 50% 50%;
+border-bottom-right-radius: 50% 50%;
+border-bottom-left-radius: 50% 50%;
+    }
+    p.mi {
+             position: absolute;
+        width: 100px;
+height: 100px;
+left: 740px;
+top: 700px; 
+    }
+    img.lvs {
+ position: absolute;
+width: 100px;
+height: 100px;
+left: 620px;
+top: 600px;
+border-top-left-radius: 50% 50%;
+border-top-right-radius: 50% 50%;
+border-bottom-right-radius: 50% 50%;
+border-bottom-left-radius: 50% 50%;
+    }
+    p.ls {
+        position: absolute;
+        width: 100px;
+height: 100px;
+left: 630px;
+top: 700px; 
+    }
+
+ footer.sponsor {
+    position: absolute;
+    left: 50px;
+    top: 870px;
+}
+</style>
+</body>
+</html>
